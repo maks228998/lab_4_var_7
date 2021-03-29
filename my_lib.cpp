@@ -1,15 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "my_lib.h"
 
-//version 0.6
-
-int get_int_rand_min_max(const int min, const int max)
-{
-	const double rand_0_1 = rand() / (RAND_MAX + 1.0);
-	int n = max - min + 1;
-	const int res = min + (int)(rand_0_1 * n);
-	return res;
-}
+//version 0.7
 
 int input_int_number() {
 	int number = 0;
@@ -38,7 +30,6 @@ int input_int_number() {
 
 	} while (is_negative);
 	return number;
-
 }
 
 int get_int_number_on_one_or_zero() {
@@ -101,6 +92,24 @@ int get_int_number_than_greater_min_and_less_max(const int min, const int max) {
 
 	} while (input_error);
 	return number;
+}
+
+int get_int_rand_min_max(const int min, const int max) {
+	const double rand_0_1 = rand() / (RAND_MAX + 1.0);
+	int n = max - min + 1;
+	const int res = min + (int)(rand_0_1 * n);
+	return res;
+}
+
+int get_int_factorial(const int number) {
+	int factorial = 1.0;
+
+	if (number != 0) {
+		for (int counter = 1; counter < number + 1; counter++) {
+			factorial = factorial * counter;
+		}
+	}
+	return factorial;
 }
 
 double input_double_number() {
@@ -179,4 +188,15 @@ double get_double_number_than_greater_min_and_less_max(const double min, const d
 
 	} while (input_error);
 	return number;
+}
+
+double get_double_factorial(const double number) {
+	double factorial = 1.0;
+
+	if (number != 0) {
+		for (int counter = 1; counter < number + 1; counter++) {
+			factorial = factorial * counter;
+		}
+	}
+	return factorial;
 }
