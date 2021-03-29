@@ -9,7 +9,7 @@ int main() {
 	printf("                X   \n");
 
 	printf("Enter X\n");
-	double number_x = get_double_number_than_greater_min_and_less_max(0, 1024);
+	double number_x = get_double_number_than_not_greater_min_and_not_less_max(0, 1024);
 	const int const_n = 4;
 	double result = 1.0;
 
