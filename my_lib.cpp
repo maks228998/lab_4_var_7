@@ -71,7 +71,7 @@ int get_int_number_than_greater_one() {
 	return number;
 }
 
-int get_int_number_than_greater_min_and_less_max(const int min, const int max) {
+int get_int_number_than_not_greater_min_and_not_less_max(const int min, const int max) {
 	int number = 0;
 	int input_error = 1;
 
@@ -167,7 +167,7 @@ double get_double_number_on_positive() {
 	return number;
 }
 
-double get_double_number_than_greater_min_and_less_max(const double min, const double max) {
+double get_double_number_than_not_greater_min_and_not_less_max(const double min, const double max) {
 	double number = 0;
 	int input_error = 1;
 
